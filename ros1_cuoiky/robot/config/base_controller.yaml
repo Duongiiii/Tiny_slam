@@ -1,0 +1,28 @@
+joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 20
+diff_drive_controller:
+    type: diff_drive_controller/DiffDriveController
+    left_wheel: Banhtrai_joint
+    right_wheel: Banhphai_joint
+    pose_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
+    twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
+    publish_rate: 20
+    wheel_separation: 0.135
+    wheel_radius: 0.064075
+    cmd_vel_timeout: 0.25
+    velocity_rolling_window_size: 10
+    base_frame_id: base_link
+    enable_odom_tf: false
+    odom_frame_id: odom
+
+gazebo_ros_control:
+  pid_gains:
+    Banhtrai_joint:
+      p: 1.0  # Proportional gain
+      i: 0.0   # Integral gain
+      d: 0.0   # Derivative gain
+    Banhphai_joint:
+      p: 1.0
+      i: 0.0
+      d: 0.0
