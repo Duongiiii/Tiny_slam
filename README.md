@@ -7,6 +7,6 @@ Video chạy: https://www.youtube.com/watch?v=Djz-BNgXoUA
 Hướng dẫn: 
 Chạy: roslaunch robot empty_word.launch
 
-Foder tiny-slam-ros-cpp gồm các file để xử lý và tính toán
+Foder tiny_slam gồm các file để xử lý và tính toán
 
 Forder robot gồm các file cài đặt tham số và chạy
